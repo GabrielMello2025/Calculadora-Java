@@ -5,6 +5,26 @@ public class Operation{
     public double divisao;
     public double porcentagem;
 
+    public String  somaEscolhida ( int operacaoEscolhida){
+        if (operacaoEscolhida == 1){ 
+        return "Soma"; 
+        }
+        else if ( operacaoEscolhida == 2){
+        return "Subtração";
+        }
+        else if ( operacaoEscolhida == 3){
+            return "Multiplicação";
+        }
+        else if (operacaoEscolhida == 4){
+            return "Divisão";
+        }
+        else if (operacaoEscolhida == 5){
+            return "Porcentagem";
+        }
+        else return "Operação invalida";
+        
+    }
+
     public double calculoSoma(double a, double b ){
         return a + b ;
     }
